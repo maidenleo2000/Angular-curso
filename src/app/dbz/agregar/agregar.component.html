@@ -1,0 +1,15 @@
+
+<h3>Agregar <small>{{nuevo.nombre}}</small></h3>
+<hr>
+
+<form (submit)="agregar()">
+    <!-- Los parentesis () sirven para ESCUCHAR eventos y los corchetes [] para buscar y traer un valor que tenga en el component.ts declarado y mostrarlo-->
+    <!-- <input type="text" placeholder="Nombre" [value]="nuevo.nombre" (input)="cambiarNombre($event)"> -->
+
+    <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+
+
+    <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder">
+
+    <button type="submit">Agregar</button>
+</form>

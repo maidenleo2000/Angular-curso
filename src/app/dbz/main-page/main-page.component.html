@@ -1,0 +1,39 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- En el [data] se guarda el array personajes -->
+        <!-- <app-personajes [data]="personajes"></app-personajes> -->
+        <app-personajes></app-personajes>
+        <!-- <h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let personaje of personajes">
+                {{personaje.nombre}} - {{personaje.poder | number}}
+            </li>
+        </ul> -->
+
+    </div>
+
+    <div class="col">
+        <app-agregar [nuevo] = "nuevo"></app-agregar>
+        <!-- <app-agregar [nuevo] = "nuevo" (onNuevoPersonaje)="agregarNuevoPersonaje($event)"></app-agregar> -->
+        <!-- <h3>Agregar <small>{{nuevo.nombre}}</small></h3>
+        <hr>
+
+        <form (submit)="agregar()">
+             Los parentesis () sirven para ESCUCHAR eventos y los corchetes [] para buscar y traer un valor que tenga en el component.ts declarado y mostrarlo-->
+            <!-- <input type="text" placeholder="Nombre" [value]="nuevo.nombre" (input)="cambiarNombre($event)"> 
+
+            <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+
+
+            <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder">
+
+            <button type="submit">Agregar</button>
+        </form> -->
+
+    </div>
+
+</div>
